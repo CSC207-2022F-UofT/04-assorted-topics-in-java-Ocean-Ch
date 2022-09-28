@@ -29,7 +29,7 @@ class DrivableMap {
      */
 
     public boolean addDrivable(String id, Drivable toAdd){
-        if (drivable_map.get(id).equals("null")){
+        if (drivable_map.get(id) == null){
             drivable_map.put(id, toAdd);
             return true;
         }
